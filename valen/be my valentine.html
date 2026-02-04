@@ -1,0 +1,56 @@
+<html>
+<head><title>Be my valentine?</title>
+<style>
+
+body{
+	text-align:center;
+	color:orange;
+	font-size:20px;
+	font-family:"Lucida Calligraphy";
+}
+
+form{ 
+	color:pink;
+	font-family:"calibri";
+}
+
+#hearts{
+	display:none;
+	font-size:40px;
+	margin-top:20px;
+	animation: float 1s infinite alternate;
+}
+
+@keyframes float{
+	from{ transform: translateY(0); }
+	to{ transform: translateY(-10px); }
+}
+
+</style>
+</head>
+
+<body background="hib.jpg"> 
+<br><br>
+
+<h1>SEDANI will you be my valentine?
+
+<form>
+<input type="radio" name="select" value="Yes" onclick="showHearts()"> Yes :)
+<input type="radio" name="select" value="No" onclick="hideHearts()"> No :(
+</form>
+</h1>
+
+<div id="hearts">❤️ ❤️ ❤️ ❤️ ❤️</div>
+
+<script>
+function showHearts(){
+	document.getElementById("hearts").style.display="block";
+}
+
+function hideHearts(){
+	document.getElementById("hearts").style.display="none";
+}
+</script>
+
+</body>
+</html>
